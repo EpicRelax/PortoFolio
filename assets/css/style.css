@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato/Lato-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+    color: rgb(56, 56, 56);
+}
+
+#headerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/parallax1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    height: 55vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    transition: all .3s;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.836);
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav li {
+    padding: 0.5rem 0.9rem;
+}
+
+header nav form input, header nav form button {
+    padding: 0.5rem 0.7rem;
+    border: none;
+}
+
+header nav form input {
+    background-color: transparent;
+}
+
+header nav form input:focus {
+    outline: none;
+}
+
+h1 {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 1rem 2rem;
+}
+
+/* section about */
+
+#about .width {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#aboutMe {
+    padding: 3rem 0;
+}
+
+#aboutMe h2, #aboutMe p:first-of-type {
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+#myName {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+#myName figure {
+    width: 35%;
+}
+
+#myName figcaption {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#myName figure img {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+#myName p {
+    width: 50%;
+}
